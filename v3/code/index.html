@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Programación en Java</title>
+	<!-- Custom styles for this template -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/">
+	<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="cheatsheet.css" rel="stylesheet">
+    <!-- Scrips -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+	<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  	<script src="cheatsheet.js"></script>
+	<!-- Style -->
+    <style>
+		.bd-placeholder-img {
+			font-size: 1.125rem;
+			text-anchor: middle;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			user-select: none;
+		}
+		@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+			  font-size: 3.5rem;
+			}
+		}
+    </style>
+</head>
+<body class="bg-light" data-spy="scroll" data-target="#EpicNavbar">
+	
+	<!--
+	<header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
+	  	<nav id="EpicNavbar" class="navbar navbar-dark bg-dark shadow-sm px-4 fixed-top">
+	        <a href="../index.html" class="navbar-brand d-flex align-items-center">
+	            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="me-3" class="bi bi-terminal" viewBox="0 0 16 16">
+	              <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
+	              <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"/>
+	            </svg>
+	            <strong>Programación en Java</strong>
+	      	</a>
+	        <ul class="nav nav-pills">
+	            <li class="nav-item">
+	                <a class="nav-link flex-column text-white" href="#Clasificacion">Clasificación</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link text-white" href="#Algoritmo">Algoritmo</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link text-white" href="#Lenguaje">Lenguaje</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link text-white" href="#Creacion">Creacion</a>
+	            </li>
+	            <li class="nav-item">
+	                <a class="nav-link text-white" href="#Paradigmas">Paradigmas</a>
+	            </li>
+	        </ul>
+		</nav>
+	</header>
+	-->
+
+	<header class="bd-header bg-dark py-1 d-flex align-items-stretch border-bottom border-dark shadow-lg">
+	  <div id="EpicNavbar" class="navbar navbar-dark bg-dark shadow-sm px-3 container-fluid d-flex align-items-center">
+	    <a href="../index.html" class="navbar-brand d-flex align-items-center">
+	        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="me-3" class="bi bi-terminal" viewBox="0 0 16 16">
+	          <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
+	          <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"/>
+	        </svg>
+	        <strong class=" data-bs-toggle="tooltip" data-bs-placement="top" title="Pagína Principal">Programación en Java</strong>
+	  	</a>	
+	    <ul class="nav nav-pills">
+	        <li class="nav-item">
+	            <a class="nav-link flex-column text-white" href="#Clasificacion" data-bs-toggle="tooltip" data-bs-placement="top" title="Clasificación de Software">Clasificación</a>
+	        </li>
+	        <li class="nav-item">
+	            <a class="nav-link text-white" href="#Paradigmas" data-bs-toggle="tooltip" data-bs-placement="top" title="Paradigmas de Programación">Paradigmas</a>
+	        </li>
+	        <li class="nav-item">
+	            <a class="nav-link text-white" href="#IDE" data-bs-toggle="tooltip" data-bs-placement="top" title="Editores, Compiladores e Interpretes">IDE</a>
+	        </li>
+	        <li class="nav-item">
+	            <a class="nav-link text-white" href="#Creacion" data-bs-toggle="tooltip" data-bs-placement="top" title="Creación de Software">Creación</a>
+	        </li>
+	        <li class="nav-item">
+	            <a class="nav-link text-white" href="#Consola" data-bs-toggle="tooltip" data-bs-placement="top" title="Consola de Comandos">Consola</a>
+	        </li>
+	    </ul>
+	  </div>
+	</header>
+
+	<aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-0">
+		<br>
+		<nav class="small" id="toc">
+		    <ul class="list-unstyled">
+				<li class="my-2">
+				<button class="btn d-inline-flex align-items-center collapsed dropdown-item" data-bs-toggle="collapse" aria-expanded="true" data-bs-target="#conceptos-collapse" aria-controls="conceptos-collapse" data-bs-toggle="tooltip" data-bs-placement="top" title="Fundamentos de Programación">Conceptos Básicos</button>
+				<ul class="list-unstyled ps-3 collapse in show" id="conceptos-collapse">
+				  	<li><a class="d-inline-flex align-items-center rounded" href="#Clasificacion">
+				  		Clasificación de Software
+					</a></li>
+				  	<li><a class="d-inline-flex align-items-center rounded" href="#Paradigmas">
+				  		Paradigmas
+					</a></li>
+					<li><a class="d-inline-flex align-items-center rounded" href="#IDE">
+			  			IDE
+					</a></li>
+					<li><a class="d-inline-flex align-items-center rounded" href="#Creacion">
+			  			Creación
+					</a></li>
+					<li><a class="d-inline-flex align-items-center rounded" href="#Consola">
+			  			Consola
+					</a></li>
+				</ul>
+		    </ul>
+	  	</nav>
+	  	<h2 class="h6 pt-4 pb-3 mb-4 border-bottom" style="color: black">&nbsp;&nbsp;
+	  		<b>Temario de Programación</b>
+		</h2>
+	  	<nav class="small" id="toc">
+		    <ul class="list-unstyled">
+				<li class="my-2">
+				<button class="btn d-inline-flex align-items-center collapsed dropdown-item" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse" data-bs-toggle="tooltip" data-bs-placement="top" title="Fundamentos de Programación">Fundamentos</button>
+				<ul class="list-unstyled ps-3 collapse" id="contents-collapse">
+				  	<li><a class="d-inline-flex align-items-center rounded">
+				  		Conceptos Básicos
+						</a></li>
+				  	<li><a class="d-inline-flex align-items-center rounded" href="#">
+				  		Paradigmas de programación
+						</a></li>
+						<li><a class="d-inline-flex align-items-center rounded" href="#">
+				  		IDE
+						</a></li>
+						<li><a class="d-inline-flex align-items-center rounded" href="#">
+				  		Creación
+						</a></li>
+						<li><a class="d-inline-flex align-items-center rounded" href="#">
+				  		Consola
+						</a></li>
+				</ul>
+				</li>
+				<li class="my-2">
+				<button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse" data-bs-toggle="tooltip" data-bs-placement="top" title="Programación Orientada a Objetos">POO</button>
+				<ul class="list-unstyled ps-3 collapse" id="forms-collapse">
+				  <li><a class="d-inline-flex align-items-center rounded" href="#overview">Overview</a></li>
+				  <li><a class="d-inline-flex align-items-center rounded" href="#disabled-forms">Disabled forms</a></li>
+				  <li><a class="d-inline-flex align-items-center rounded" href="#sizing">Sizing</a></li>
+				  <li><a class="d-inline-flex align-items-center rounded" href="#input-group">Input group</a></li>
+				  <li><a class="d-inline-flex align-items-center rounded" href="#floating-labels">Floating labels</a></li>
+				  <li><a class="d-inline-flex align-items-center rounded" href="#validation">Validation</a></li>
+				</ul>
+				</li>
+				<li class="my-2">
+				<button class="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse" data-bs-toggle="tooltip" data-bs-placement="top" title="Estructura de Datos">Estructuras de Datos</button>
+				<ul class="list-unstyled ps-3 collapse" id="components-collapse">
+				  <li><a class="d-inline-flex align-items-center rounded" href="#accordion">Accordion</a></li>
+				  <li><a class="d-inline-flex align-items-center rounded" href="#alerts">Alerts</a></li>
+				  <li><a class="d-inline-flex align-items-center rounded" href="#badge">Badge</a></li>
+				  <li><a class="d-inline-flex align-items-center rounded" href="#breadcrumb">Breadcrumb</a></li>
+				  <li><a class="d-inline-flex align-items-center rounded" href="#buttons">Buttons</a></li>
+				  <li><a class="d-inline-flex align-items-center rounded" href="#button-group">Button group</a></li>
+				  <li><a class="d-inline-flex align-items-center rounded" href="#card">Card</a></li>
+				  <li><a class="d-inline-flex align-items-center rounded" href="#carousel">Carousel</a></li>
+				</ul>
+				</li>
+		    </ul>
+	  </nav>
+	</aside>
+
+	<div class="bd-cheatsheet container-fluid bg-body" data-spy="scroll" data-target="#EpicNavbars" data-offset="0">
+	  	<section id="content">
+		    <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3" style="text-shadow: 6px 6px 10px #4E9A06;" data-bs-toggle="tooltip" data-bs-placement="top" title="Fundamentos de Programación">
+		    	Fundamentos<br><small>de programación</small>
+		    </h2>
+
+		<article id="Conceptos">
+	      	<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+	      		<hr>
+	        	<h3 style="text-shadow: 6px 6px 13px #888A85;"><b>Conceptos Básicos</b></h3>
+	        	<p style="padding: 10px" align="justify">
+	        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum.
+	        	</p>
+	      	</div>
+	      	<div class="text-dark shadow-lg p-4 mb-4 bg-light rounded">
+		    	<h4 align="center"><b>Conceptos Básicos</b></h4>
+		    	<h5  align="justify">
+		        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+		        	<br><br>
+					Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+		        </h5>
+		    </div>
+	  	</article>
+
+		<article class="my-3" id="Conceptos">
+	      	<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+	      		<hr>
+	        	<h3 style="text-shadow: 6px 6px 13px #888A85;"><b>Clasificación del Software</b></h3>
+	        	<p style="padding: 10px" align="justify">
+	        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. 
+	        	</p>
+	      	</div>
+	      	<div class="shadow p-4 mb-5 bg-body rounded" id="Clasificacion">
+	            <h4><b>Clasificación del Software de: Sistemas y Aplicación</b></h4>
+	            <h5 align="justify">
+	            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+	            	<br><br>
+					Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+					<br><br>
+					Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+					<br><br>
+					Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+					<br><br>
+					In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+	            </h5>
+	    	</div>
+	  	</article>
+
+	  	<article class="my-3" id="Conceptos">
+	      	<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+	      		<hr>
+	        	<h3 style="text-shadow: 6px 6px 13px #888A85;"><b>Paradigmas</b></h3>
+	        	<p style="padding: 10px" align="justify">
+	        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. 
+	        	</p>
+	      	</div>
+	      	<div class="shadow p-4 mb-5 bg-body rounded" id="Paradigmas">
+	            <h4><b>Paradigmas</b></h4>
+	            <h5 align="justify">
+	            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+	            	<br><br>
+					Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+					<br><br>
+					Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+					<br><br>
+					Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+					<br><br>
+					In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+	            </h5>
+	        </div>
+	  	</article>
+
+	  	<article class="my-3" id="IDE">
+	      	<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+	      		<hr>
+	        	<h3 style="text-shadow: 6px 6px 13px #888A85;"><b>IDE</b></h3>
+	        	<p style="padding: 10px" align="justify">
+	        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. 
+	        	</p>
+	      	</div>
+	      	<div class="shadow p-4 mb-5 bg-body rounded" id="IDE">
+	            <h4><b>IDE</b></h4>
+	            <h5 align="justify">
+	            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+	            	<br><br>
+					Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+					<br><br>
+					Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+					<br><br>
+					Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+					<br><br>
+					In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+	            </h5>
+	        </div>
+	  	</article>
+
+	  	<article class="my-3" id="Creacion">
+	      	<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+	      		<hr>
+	        	<h3 style="text-shadow: 6px 6px 13px #888A85;"><b>Creación</b></h3>
+	        	<p style="padding: 10px" align="justify">
+	        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. 
+	        	</p>
+	      	</div>
+	      	<div class="shadow p-4 mb-5 bg-body rounded" id="Creacion">
+	            <h4><b>Creación</b></h4>
+	            <h5 align="justify">
+	            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+	            	<br><br>
+					Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+					<br><br>
+					Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+					<br><br>
+					Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+					<br><br>
+					In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+	            </h5>
+	        </div>
+	  	</article>
+
+	  	<article class="my-3" id="Consola">
+	      	<div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
+	      		<hr>
+	        	<h3 style="text-shadow: 6px 6px 13px #888A85;"><b>Consola</b></h3>
+	        	<p style="padding: 10px" align="justify">
+	        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. 
+	        	</p>
+	      	</div>
+	      	<div class="shadow p-4 mb-5 bg-body rounded" id="Consola">
+	            <h4><b>Consola</b></h4>
+	            <h5 align="justify">
+	            	Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet enim a lectus rutrum dictum in in ipsum. Duis ultricies tincidunt magna luctus pretium. Suspendisse sagittis hendrerit libero, a malesuada ligula lacinia eget. Sed et metus ut eros interdum malesuada et id odio. Suspendisse vel enim sem. Aenean auctor arcu vel placerat consequat. Morbi et porta augue. Cras euismod sapien in bibendum facilisis. Quisque blandit metus a tempor elementum. Maecenas finibus non ex ac sollicitudin. Etiam sed odio lectus. Fusce sit amet sodales elit.
+	            	<br><br>
+					Mauris viverra volutpat diam, id ultricies orci volutpat a. Integer id mi sollicitudin, finibus magna convallis, imperdiet sapien. Nulla fermentum sapien in sollicitudin dapibus. Morbi sed elit ac urna mollis luctus sed quis leo. Etiam odio neque, ullamcorper sit amet mi tempus, sollicitudin ullamcorper nulla. Sed venenatis tristique nibh ut condimentum. Aenean fringilla nibh tortor, in condimentum nulla dictum at. Nam id odio ut quam finibus pellentesque quis et nulla. Aenean vitae laoreet ante. Sed erat nunc, rutrum vitae ullamcorper sed, sodales quis sem. Vivamus eget risus in tellus ullamcorper iaculis. Suspendisse a risus pellentesque, efficitur diam at, laoreet est. Vivamus pharetra eu urna et sollicitudin. In hac habitasse platea dictumst. Aliquam faucibus, mi ut viverra varius, nisl felis convallis quam, et blandit quam orci eu magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+					<br><br>
+					Cras semper bibendum semper. Morbi eleifend, sapien sed consectetur luctus, nisl quam sollicitudin enim, ultrices venenatis enim elit ac dolor. Vestibulum vitae feugiat risus. Nam quis velit non purus bibendum posuere. Sed sed leo eleifend, ornare leo ac, egestas metus. Nunc ante ante, elementum sit amet cursus quis, fringilla nec dui. Proin lacinia malesuada sapien, a aliquet sapien vehicula sit amet. Mauris efficitur auctor erat porta fermentum. Nulla venenatis, leo sit amet pellentesque interdum, dui augue posuere ligula, sed mollis dolor lorem vel massa. Donec venenatis velit sem, ornare porttitor nibh tincidunt pellentesque.
+					<br><br>
+					Phasellus eget massa eu erat dapibus feugiat ac vel est. Integer ut ex ac sem pulvinar varius. Phasellus a sem quis nisi accumsan bibendum. Cras volutpat dictum justo, sit amet varius enim hendrerit sed. Proin in rhoncus magna. Nullam a efficitur purus. Donec vel condimentum mi. Cras mollis facilisis sollicitudin.
+					<br><br>
+					In eget blandit tellus, ac ultrices massa. Nullam at dolor lorem. In vestibulum est sit amet mi blandit sagittis. Quisque non tempor sapien. Proin at nunc a odio vestibulum commodo. Nulla facilisi. Quisque neque nunc, suscipit et sodales a, convallis nec sapien. Proin nisl nisi, consectetur nec ipsum non, tempor scelerisque nisl. Duis diam ex, mollis ut dapibus a, suscipit at risus. Mauris placerat ullamcorper dolor, mattis dignissim massa. Cras non elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam accumsan pulvinar quam, in suscipit justo venenatis ac.
+	            </h5>
+	        </div>
+	  	</article>
+	</div>
+
+</body>
+</html>
